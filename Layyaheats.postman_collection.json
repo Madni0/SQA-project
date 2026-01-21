@@ -1,0 +1,271 @@
+{
+  "info": {
+    "_postman_id": "de3cca51-a0de-44ee-ad43-b70b690eebf6",
+    "name": "Layyaheats",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42787655"
+  },
+  "item": [
+    {
+      "name": "https://layyaheatshub.vercel.app/api/menu",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/menu",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "menu"
+          ]
+        },
+        "description": "Register a new user account"
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/restaurants",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/restaurants",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "restaurants"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/orders",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/orders",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/auth/register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Test User\",\r\n  \"email\": \"testuser@example.com\",\r\n  \"phone\": \"03001234567\",\r\n  \"password\": \"TestPass123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/auth/register",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/auth/login",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"testuser@example.com\",\r\n  \"password\": \"TestPass123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/auth/login",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/cart",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/cart",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "cart"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/cart",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": \"{{menu_item_id}}\",\r\n  \"name\": \"Chicken Karahi\",\r\n  \"price\": 800,\r\n  \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/cart",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "cart"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://layyaheatshub.vercel.app/api/orders",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"deliveryFee\": 50\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://layyaheatshub.vercel.app/api/orders",
+          "protocol": "https",
+          "host": [
+            "layyaheatshub",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
